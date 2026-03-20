@@ -10,7 +10,7 @@ var app = builder.Build();
 // Definição de rotas HTTP do tipo GET 
 app.MapGet("/", () => "API funcionando com ASP.NET!");
 app.MapGet("/saudacao", () => new {mensagem="Olá, mundo!" });
-app.MapGet("/soma", () => new {mensagem= 5 + 8});
+app.MapGet("/subtração", () => new {mensagem= 5 - 8});
 
 // Inicia o servidor web é iniciado e passa a aguardar requisições HTTP dos clientes
 app.Run();
